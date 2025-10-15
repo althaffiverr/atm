@@ -1,4 +1,5 @@
-{
+#include <stdio.h>
+int main(){
     int choice,depo,with,balance=0,cont,mini[10],i=0;
     for(;;){
         printf("1:deposit\n2:withdraw\n3:balance\n4:mini statement\nplease enter your choice\n");
