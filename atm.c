@@ -17,7 +17,7 @@ int main(){
             printf("enter the amount you want to withdraw\n");
             scanf("%d",&with);
             balance=balance-with;
-            mini[i]=with;
+            mini[i]=(with*-1);
             i++;
             printf("the amount has been withdrawed\n");
             break;
