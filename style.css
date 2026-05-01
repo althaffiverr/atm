@@ -1,0 +1,125 @@
+/* Body */
+body {
+  background: linear-gradient(135deg, #1f1f1f, #3a3a3a);
+  color: #eaeaea;
+  font-family: 'Poppins', sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  height: 100vh;
+  padding-top: 40px;
+  margin: 0;
+}
+
+/* Heading */
+h1 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  color: #00ffcc;
+  text-shadow: 0 0 10px rgba(0,255,204,0.5);
+}
+
+/* Calculator container */
+.calculator {
+  background: #1e1e1e;
+  padding: 25px;
+  border-radius: 18px;
+  width: max-content;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+}
+
+/* Display */
+#result {
+  width: 100%;
+  height: 60px;
+  font-size: 26px;
+  margin-bottom: 15px;
+  text-align: right;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #111;
+  color: #eaeaea;
+  box-shadow: inset 0 0 8px rgba(255,255,255,0.05);
+}
+
+/* Grid layout */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 70px);
+  gap: 12px;
+  justify-content: center;
+}
+
+/* Buttons */
+button {
+  height: 60px;
+  font-size: 18px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  background: #2a2a2a;
+  color: white;
+  transition: all 0.2s ease;
+}
+
+/* Hover */
+button:hover {
+  background:  #3a3a3a;
+  transform: translateY(-2px);
+}
+
+/* Click */
+button:active {
+  transform: scale(0.92);
+}
+
+/* Operator buttons */
+.op {
+  background: #b08968;
+}
+
+.op:hover {
+  background: #a07858;
+}
+
+/* Equal button */
+.equal {
+  background: #3a7d44;
+  grid-row: span 2;
+}
+
+.equal:hover {
+  background: #2f6b38;
+}
+
+/* Clear button */
+.clear {
+  background: #a94442;
+}
+
+.clear:hover {
+  background: 8a3836;
+}
+
+/* Backspace button */
+.back {
+  background: #444;
+   grid-column: span 2;
+}
+
+.back:hover {
+  background: #444;
+}
+
+/* Zero button (wide) */
+.zero {
+  grid-column: span 2;
+}
