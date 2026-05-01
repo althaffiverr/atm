@@ -1,0 +1,107 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Background */
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;   /* IMPORTANT */
+  justify-content: center;
+  align-items: center;
+  background: #111;
+}
+
+/* Heading */
+h1 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 26px;
+  color: #ffb347;
+}
+
+/* Calculator */
+.calculator {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 20px;
+  width: 380px;
+}
+
+/* Display */
+#result {
+  width: 100%;
+  height: 70px;
+  border: none;
+  outline: none;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 28px;
+  border-radius: 15px;
+  background: #0f0f0f;
+  color: white;
+  text-align: right;
+}
+
+/* Grid */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+/* Default button */
+button {
+  height: 60px;
+  border: none;
+  border-radius: 18px;
+  font-size: 18px;
+  cursor: pointer;
+  background: #2a2a2a;
+  color: #eaeaea;
+  transition: 0.15s ease;
+}
+
+/* Press effect */
+button:active {
+  transform: scale(0.95);
+}
+
+/* Numbers (dark soft look) */
+button:not(.op):not(.equal):not(.clear):not(.back) {
+  background: #2b2b2b;
+}
+
+/* Operators (beige tone) */
+.op {
+  background: #b08968;
+  color: white;
+}
+
+/* Equal (green) */
+.equal {
+  background: #3d7f45;
+  color: white;
+}
+
+/* Clear (red) */
+.clear {
+  background: #a94442;
+  color: white;
+}
+
+/* Backspace (wide grey) */
+.back {
+  background: #4a4a4a;
+  grid-column: span 2;
+}
+
+/* Zero wide */
+.zero {
+  grid-column: span 2;
+}
